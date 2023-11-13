@@ -1,0 +1,54 @@
+<!-- templates/show_links.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>URL Finder Results</title>
+    <style>
+        body {
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        .result-box {
+            max-width: 400px;
+            margin: 50px 15px;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 2px 5px 8px black;
+        }
+
+        h2 {
+            color: #333;
+        }
+
+        .url-list {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .url-list li {
+            margin: 5px 0;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <div class="result-box">
+        <h2>URL Finder Results</h2>
+        <ul class="url-list">
+            {% for link in links %}
+                <li>{{ link }}</li>
+            {% endfor %}
+        </ul>
+    </div>
+</body>
+</html>
