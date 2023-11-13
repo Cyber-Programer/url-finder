@@ -1,5 +1,5 @@
 # Url finder 
-## Description : using this website you can find all url in a web page.
+## Description : using this website you can find all url from a web page.
 
 ### link : https://url-finder.cyber-programer.repl.co/
 
